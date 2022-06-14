@@ -7,7 +7,7 @@ WIP
 This is configured for Watch Dogs Legion, the game ID must be manually changed in the savegame directory if you want to get saves for other games.
 
 If you leave this script running, it will continue backing up the same exact savegame state every 10 minutes until you stop it.\
-One mistake = very messy
+Forgetting to close = very messy
 
 
 # Usage
