@@ -20,6 +20,7 @@ One mistake = very messy
 
 # Issues
 Many.\
-[1] timestamp zero-pad should apply to minutes as well\
-[2] script WILL backup duplicate game files, it should only backup the savegame if it has changed\
-[2] Backup files contains all root directories leading to save file, which is inconvenient
+[1] timestamp zero-pad should apply to minutes as well.\
+[2] Script WILL backup duplicate game files, it should only backup the savegame if it has changed.\
+[3] Backup files contains all root directories leading to save file, which is inconvenient.\
+[4] Script can't auto-set ubisoft ID if there are multiple to choose from. See [get_ubisoft_id() function](https://github.com/Deconkle/ubisoft-savegame-backups/blob/main/main.py#L6-L13).
