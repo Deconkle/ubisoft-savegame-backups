@@ -8,8 +8,8 @@ def get_ubisoft_id():
     if len(listdir(root)) == 1:
         return listdir(root)[0]
     else:
-        print("hey I'm not sure what ubisoft ID to use")
-        print("check the github for help")
+        print("We can't choose what ubisoft ID to use!")
+        print("(this script isn't saving anything!!)")
         sleep(1e+5) # sleep forever
 
 save_path = f"C:\\Program Files (x86)\\Ubisoft\\Ubisoft Game Launcher\\savegames\\{get_ubisoft_id()}\\3353"
