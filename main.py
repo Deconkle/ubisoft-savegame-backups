@@ -24,8 +24,7 @@ def timestamp(should_zero_pad=False, separator="-"):
     now = datetime.now()
     hour = now.hour
     minute = now.minute
-    # what's a strptime()?
-    return ( ("0" if should_zero_pad and hour-12 <= 9 else "") + str(hour-12) + separator + str(minute)+"PM" if hour-12 > 0 else ("0" if should_zero_pad and hour<=9 else "") + str(hour) + separator + str(minute)+"AM")
+    return ( (str(hour-12) if hour > 12 else str(hour)) + separator + ("0" if minute <= 9 else "") + str(minute) + ("AM" if hour < 12 else "PM") )
 
 def save():
     fn = archive_path+timestamp(True)+".zip" # 10:18PM.zip
